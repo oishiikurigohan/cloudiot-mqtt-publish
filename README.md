@@ -10,6 +10,7 @@ Raspberry piの設定やパーツの配線については当方ブログ([1](htt
   
 依存パッケージのインストール(不要な物があったらスミマセン)
 ```
+$ pip3 install pyserial
 $ pip3 install -r requirements.txt
 ```
   
