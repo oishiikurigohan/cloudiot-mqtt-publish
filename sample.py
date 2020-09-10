@@ -103,7 +103,7 @@ def get_location_info():
             data = serial_port.readline().decode('utf-8')
             if data.startswith("$GPRMC") and send_location_info:
                 sData = data.split(',')
-                pData = ','.join([DEVICE_ID, sData[1], sData[3], sData[5]])
+                pData = ','.join([DEVICE_ID, sData[9], sData[1], sData[3], sData[5]])
                 print('append', pData)
                 location_list.append(pData)
         except UnicodeDecodeError:
